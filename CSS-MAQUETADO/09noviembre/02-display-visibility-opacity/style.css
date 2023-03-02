@@ -1,0 +1,64 @@
+
+section{
+    border: 1px dashed grey;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+p{
+    border: 1px solid black;
+    padding: 16px;
+}
+
+div{
+    background-color: #b6b4c2;
+    padding: 32px;
+    font-size: 32px;
+    text-align: center;
+}
+
+div:hover{
+    cursor: pointer;
+}
+div:hover+p{
+    background-color: #e5c1cd;
+}
+
+/*
+    Existen diferentes formas de ocultar elementos
+*/
+
+/*
+    display: none;
+
+    Desaparece al elemento. 
+    No sólo lo oculta, también quita el espacio que el elemento usaria. 
+    No es posible interactuar con él.
+*/
+
+.d-none{
+    display: none;
+}
+
+
+/*
+    visibility: hidden;
+
+    Oculta al elemento pero mantiene el espacio del mismo. (Deja el hueco)
+    No permite interacción con el elemento
+*/
+
+.v-hidden{
+    visibility: hidden;
+}
+
+/*
+    opacity:0 ;
+
+    Hace transparente al elemento.
+    Permite la interacción
+*/
+
+.opacity-0{
+    opacity: 0.3;
+}

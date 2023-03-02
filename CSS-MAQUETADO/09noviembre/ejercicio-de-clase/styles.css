@@ -1,0 +1,42 @@
+div{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.caja-1{
+    background-color: lightseagreen;
+}
+
+.caja-2{
+    background-color: lightgray;
+    display: none;
+}
+
+.caja-3{
+    background-color: cornflowerblue;
+}
+
+.caja-4{
+    background-color: rgb(237, 100, 100);
+}
+
+.caja-1:hover + .caja-2{
+    display: inline-block;
+}
+
+.caja-1:hover ~ .caja-3{
+    background-color: yellow;
+}
+
+.caja-1:hover ~ .caja-4{
+    display: inline-block;
+    
+}
+
+.caja-3:hover + .caja-4{
+    display: none;
+    
+}
+

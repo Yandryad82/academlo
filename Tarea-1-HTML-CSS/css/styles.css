@@ -1,0 +1,76 @@
+header{
+    background-color: darkgrey;
+    text-align: center;
+}
+
+nav{
+    background-color: cornflowerblue;
+    height: 50px;
+    
+}
+
+ul{
+    display: inline-flex;
+}
+
+
+
+aside{
+    background-color: chocolate;
+    position: relative;
+    left: 1006px;
+    width: 328px;
+    height: 401px;
+    bottom: 420px;
+    
+    
+}
+
+section{
+    background-color: cornflowerblue;
+    width: 1000px;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.art-1{
+    background-color: burlywood;
+    position: absolute;
+    width: 960px;
+    height: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.art-2{
+    background-color: burlywood;
+    position: absolute;
+    width: 960px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: 140px;
+    
+    
+}
+
+.art-3{
+    background-color: burlywood;
+    position: absolute;
+    width: 960px;
+    height: 110px;
+    margin-left: 20px;
+    margin-top: 270px;
+    
+    
+}
+
+footer{
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 1335px;
+    height: 70px;
+    top: 550px;
+    
+}

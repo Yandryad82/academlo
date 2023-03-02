@@ -1,0 +1,116 @@
+:root{
+    --principal-color: rgb(14, 0, 139);
+}
+
+/*
+    -------------SELECTORES DE COMBINACIÓN---------------
+    Se llaman así porqué combinan otros selectores de manera que proporciona una relación útil entre ellos y la ubicación del contenido en el documento.
+
+    Puedes combinar cualquiera de los selectores basicos con selectores de combinación para seleccionar una parte concreta del documento.
+*/
+
+
+/*
+    DOBLE CRITERIO
+    Seleccionan a los elementos que cumplen dos criterios de selección al mismo tiempo
+
+    selector1selector2{
+
+    }
+*/
+p.text{
+    font-size: 22px;
+    text-align: center;
+    color: darkblue;
+}
+/*
+    SELECTOR DE DESCENDIENTES
+    Estos selectores seleccionan elementos que son descendientes de otros selectores. 
+    NO es necesario que sean hijos directos.
+
+    selectorReferencia selectorDescendiente{
+    
+    }
+*/
+
+
+#decendent-section p{
+    font-weight: bold;
+    background-color: darkmagenta;
+    color: white;
+}
+
+
+/*
+    SELECTOR DE HIJOS DIRECTOS
+    El selector de combinación de elementos hijo es un símbolo de «mayor que» (>), que selecciona solo cuando los selectores identifican elementos que son hijos directos. Los elementos descendientes que se encuentran más abajo en la jerarquía no se seleccionan. 
+
+    selectorReferencia > selectorHijo{
+
+    }
+*/
+
+#children-section > p{
+    border: 3px dotted darkcyan;
+    background-color: chocolate;
+}
+
+/*
+    SELECTOR DE HERMANO ADYACENTE
+    El selector de elementos hermanos adyacentes (+) se utiliza para seleccionar un elemento que se encuentra justo al lado de otro elemento en el mismo nivel de la jerarquía.
+
+    selectorReferencia + selectorHermanoAdyacente{
+
+    }
+*/
+
+h2 + ul{
+    background-color: brown;
+}
+
+ul + p{
+    background-color: rgb(217, 255, 0);
+}
+/*
+    SELECTOR DE HERMANOS GENERALES
+    Selecciona a todos los elementos hermanos de un elemento que coincidan con la selección aunque no sean adyacentes
+    (~).
+
+    selectorReferencia ~ selectorHermano{
+
+    }
+*/
+
+h2 ~ 
+
+/*
+    -------------------PSEUDOCLASES------------------------
+    Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado
+
+    selector:pseudoclase{
+
+    }
+*/
+
+
+body{
+    background-color: var(--principal-color);
+}
+
+section, 
+article{
+    border: 1px dashed grey;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: white;
+}
+
+section:hover{
+    cursor: pointer;
+    background-color: rgb(72, 0, 139);
+}
+
+section:hover > * {
+    background-color: darkgreen;
+}
+

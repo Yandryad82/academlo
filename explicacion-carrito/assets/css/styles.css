@@ -1,0 +1,241 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(354, 78%, 60%);
+  --button-color: hsl(0, 0%, 17%);
+  --button-color-alt: hsl(0, 0%, 21%);
+  --card-color: hsl(0, 0%, 90%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: hsl(206, 4%, 97%);
+  --container-color: #fff;
+  --border-color: hsl(0, 0%, 94%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Roboto', sans-serif;
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+/*
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+body.modoOscuro{
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+.navbar{
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+    color: var(--title-color);
+}
+
+.nav-logo{
+    width: 50px;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+main{
+    padding: 1.5rem;
+    
+}
+
+h2{
+    color: var(--title-color);
+    
+}
+
+section{
+    padding: 1rem 1.5rem; 
+    background-color: var(--container-color); 
+    
+}
+
+.cart-container{
+    background-color: rgb(109, 109, 109, 0.737);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: left .4s linear;
+    
+}
+
+
+.cart-container.oculto{
+    left: -100%;
+}
+
+
+.cart{
+    background-color: var(--container-color);
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -4px 5px 10px rgb(147 147 147);
+    
+}
+
+.icon-close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.menu-element{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.elements-of-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    display: none;
+}
+
+.menu-container{
+    background-color: rgb(109, 109, 109, 0.737);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: left .4s linear;
+}
+
+.items-menu{
+    background-color: var(--container-color);
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -4px 5px 10px rgb(147 147 147);
+}
+
+.close-menu{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.menu-container.oculto{
+    left: -100%;
+}
+
+.cart-shop{
+    position: relative;
+}
+
+
+.cart-counter{
+    padding: .25rem;
+    background-color: var(--title-color);
+    color: var(--body-color);
+    border-radius: 50%;
+    width: .50rem;
+    height: .50rem;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -9px;
+    bottom: -1px;
+}
+
+
+.contenido-carro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: auto;
+    padding: 5rem;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Por encima de 700px MEDIA QUERY*/
+
+@media screen and ( min-width: 800px ){
+    .bx-menu{
+        display: none;
+    }
+
+    .elements-of-menu{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        
+    }
+}

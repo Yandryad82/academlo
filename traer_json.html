@@ -1,0 +1,7 @@
+<script>
+
+fetch('https://icpayment.net:8444/RestReportes/buscarClientePorNumeroDeDocumento?numeroDocumento=99999999&jwt=eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJTYW1wbGUiLCJuYmYiOjE2NjY2MTM3NTUsImlzcyI6IlNhbXBsZSIsImV4cCI6MTY2NjYzMTc1NX0.RdBMMqt3X94_T599F_6-6OGDiV1J74MIYWmts8fGr9LxrEC2WNdPE5AB54I5bjRu__zFw9qzRgY_X4GPPt66bT_iTlpi9md-JAnSDwiScxkAdCf_ysLmVDlLY7pj07lNEiTC7KvtyRepGKV187SK7ltcugbgxJoKZ376y97LBmldi42vHGaQWfIVT7_Te6wLa5o3_87cFCjQ-oMCtxQMiHIoSNwzgZEaxzEO_FUxlCowwc6qt-9BLxNZU0nNsnJBkkY_-W82tGQrlOhgysSKgELGNz-VDYqa4b8GSE7QO5gKNbcM-0Tgceam3Kz5_1Ns7tn082ePcMKRUqRHF1MH1w')
+      .then(response => response.json())
+      .then(json => console.log(json.productos[1]))
+
+</script>      

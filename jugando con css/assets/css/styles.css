@@ -1,0 +1,14 @@
+.caja {
+    
+    height: 200px;
+    background-color: brown;
+    min-width: 200px;
+}
+
+.contenedor-general {
+    display: flex;
+    gap: 1rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}

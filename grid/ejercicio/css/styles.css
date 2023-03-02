@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.contenedor-padre{
+
+}
+
+header{
+    background-color: chocolate;
+}
+
+main{
+    background-color: darkgrey;
+}
+
+aside{
+    background-color: coral;
+}
+
+footer{
+
+}
+

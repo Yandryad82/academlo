@@ -1,0 +1,76 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcfcfc;
+    padding: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+.grid-reference{
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-grid{
+    border: 2px dashed gray;
+    margin-top: 1.5rem;
+    background-color: #fff;
+    min-height: calc( 100vh - 3rem );
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-auto-rows: 200px;
+    align-content: center;
+}
+
+.elemento-grid{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.uno{
+    background-color: #98bfd0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.dos{
+    background-color: #61678b;
+    grid-row: span 2;
+}
+
+.tres{
+    background-color: #78acc1;
+}
+
+.cuatro{
+    background-color: #dedeea;
+    grid-column: 2 / -1;
+}
+
+.cinco{
+    background-image: url('../images/carina.jpg');
+    grid-column: span 2;
+}
+
+.seis{
+    background-color: #bcb9d8;
+}

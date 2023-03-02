@@ -1,0 +1,48 @@
+.contenedor-general {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.principal {
+    width: 80%;
+    padding: 1rem;
+    position: relative;
+}
+
+.otra {
+    width: 20%;
+    padding: 1rem;
+    position: absolute;
+    top: .8rem;
+        
+}
+
+.container-pokedex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-pokedex img {
+    height: 200px;
+    min-width: 200px;   
+}
+
+.none {
+    opacity: 0;
+}
+
+.muestras {
+    width: 5%;
+}
+

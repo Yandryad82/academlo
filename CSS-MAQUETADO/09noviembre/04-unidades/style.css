@@ -1,0 +1,71 @@
+
+
+body{
+    padding: 24px;
+}
+
+section{
+    padding: 16px;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+div{
+    background-color: lightblue;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+/*Pixeles. La unidad absoluta mas utilizada*/
+.w-px{
+
+}
+
+/*Puntos. Utilizados en textos que pretender imprimirse*/
+.w-pt{
+
+}
+
+
+/*Depende del tamaño de fuente del elemento*/
+.w-em{
+ 
+}
+
+/*Depende de la altura de la letra x de la fuente*/
+.w-ex{
+   
+}
+
+/*Depende de la anchura del caracter 0*/
+.w-ch{
+   
+}
+
+
+/*Equivale al tamaño de fuente del elemento raiz*/
+.w-rem{
+
+}
+
+/*view width*/
+.w-vw{
+   
+}
+
+/* view height */
+.w-vh{
+  
+}
+
+
+/*Toma como referencia el lado mas pequeño del viewport*/
+.w-vmin{
+  
+}
+
+/*Toma como referencia el lado mas largo del viewport*/
+.w-vmax{
+  
+}
